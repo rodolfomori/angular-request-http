@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Meu Primeiro Site</title>
+</head>
+<body>
+  <h1 class="meuTitulo"> Meu Titulo</h1>
+  <input type="" id="mais1">
+  <input type="number" id="mais2">
+
+  <button onclick="somar()"> Somar </button>
+</body>
+
+<script>
+  function somar(){
+    let mais1 = document.getElementById('mais1').value;
+    let mais2 = document.getElementById('mais2').value;
+    let resultado = mais1 + mais2
+
+    alert(resultado)
+  }
+</script>
+
+<style>
+.meuTitulo{
+  color:red;
+  font-size: 200px;
+}
+</style>
+
+</html>
