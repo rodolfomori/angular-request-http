@@ -18,7 +18,7 @@ import { ModalService } from "src/app/shared/modal.service";
 export class CursosListaComponent implements OnInit {
   // cursos: Curso[];
   deleteModalRef: BsModalRef;
-  @ViewChild("deleteModal", { static: false }) deleteModal;
+  @ViewChild("deleteModal", { static: true }) deleteModal;
 
   cursos$: Observable<Curso[]>;
   error$ = new Subject<boolean>();
@@ -31,7 +31,7 @@ export class CursosListaComponent implements OnInit {
     private alertService: ModalService,
     private router: Router,
     private route: ActivatedRoute
-  ) { }
+  ) {}
 
   ngOnInit() {
     // this.service.list()
